@@ -1,7 +1,9 @@
 export default function SkillListItem() {
-    return 
+    return (
+        <>
         <li>SkillListItem</li>;
         <li>SkillListItem</li>;
         <li>SkillListItem</li>;
-    
+        </>
+    )
 }
