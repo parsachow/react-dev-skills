@@ -1,10 +1,11 @@
 import "./SkillListitem.css"
 
-export default function SkillListItem({ sk, index }) {
+export default function SkillListItem({ skill }) {
     return (
         
         <li className="SkillListItem">
-            {sk}
+            {skill.name} 
+            <span className="level">{skill.level}</span>
         </li>
         
     )
