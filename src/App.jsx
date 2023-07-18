@@ -9,7 +9,7 @@ import './App.css'
 
 export default function App() {
   
-  const[skills, setSkills] = useState([
+  const [skills, setSkills] = useState([
     { name: "HTML", level: 5 },
     { name: "CSS", level: 3 },
     { name: "JavaScript", level: 4 },
@@ -18,6 +18,7 @@ export default function App() {
 
   return (
     <>
+
       <h1>React Dev Skills</h1>
       <SkillList skills={skills} />
       <hr></hr>
