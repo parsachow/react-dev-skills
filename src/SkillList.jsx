@@ -6,8 +6,8 @@ export default function SkillList({ skills }) {
     
     return (
         <ul className="SkillList">
-            {skills.map((skill) => (
-            <SkillListItem skill={skill} />
+            {skills.map((skill, idx) => (
+            <SkillListItem skill={skill} key={idx} />
             ))}
             
         </ul>

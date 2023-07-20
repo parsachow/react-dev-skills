@@ -16,13 +16,22 @@ export default function App() {
     { name: "Python", level: 2 },
   ]);
 
+  function addSkill(skillFromtheForm){
+    setSkills([
+      ...skills,
+      skillFromtheForm
+    ])
+  }
+
+
+
   return (
     <>
 
       <h1>React Dev Skills</h1>
       <SkillList skills={skills} />
       <hr></hr>
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill}/>
     </>
   )
 
